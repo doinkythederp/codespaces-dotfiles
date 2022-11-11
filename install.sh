@@ -20,6 +20,7 @@ rm -f -- "$starship_file"
 cat ./starship | sudo tee -a "$starship_install_path" > /dev/null
 rm -f starship
 sudo chmod +x "$starship_install_path"
+mkdir -p ~/.config
 cat <<EOF > ~/.config/starship.toml
 [ruby]
 detect_variables = []
